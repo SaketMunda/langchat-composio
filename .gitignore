@@ -1,0 +1,136 @@
+# ============================================================
+# Parent .gitignore — applies to all subfolders
+# Covers: Python (LangChain/LangGraph), Node/Next.js
+# ============================================================
+
+# ---------------------------
+# Environment & Secrets
+# ---------------------------
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# ---------------------------
+# Python
+# ---------------------------
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.Python
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+wheels/
+*.whl
+MANIFEST
+
+# Type checking & linting
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+.pytype/
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.cover
+nosetests.xml
+pytest.xml
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ---------------------------
+# LangChain / LangGraph
+# ---------------------------
+.langgraph_api/
+.langchain/
+langchain_cache/
+.langsmith/
+
+# LangGraph Studio / server artifacts
+langgraph.json.lock
+**/__pycache__/
+
+# ---------------------------
+# Node / JavaScript / TypeScript
+# ---------------------------
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+dist-ssr/
+.next/
+out/
+.nuxt/
+.output/
+*.tsbuildinfo
+
+# Package manager locks (keep one, ignore others as needed)
+# Uncomment if you want to ignore specific lock files:
+# package-lock.json
+# yarn.lock
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+logs/
+
+# Env / local config
+*.local
+next-env.d.ts
+
+# ---------------------------
+# Editor & IDE
+# ---------------------------
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+
+# ---------------------------
+# OS
+# ---------------------------
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ---------------------------
+# Misc
+# ---------------------------
+*.local
+*.bak
+*.tmp
+*.orig
